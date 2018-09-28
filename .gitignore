@@ -1,0 +1,12 @@
+/bin/
+/out/
+/test/
+
+.idea/
+*.iml
+
+.classpath
+.project
+.settings/
+
+*.DS_Store
