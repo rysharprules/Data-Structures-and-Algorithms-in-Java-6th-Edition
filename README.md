@@ -12,6 +12,7 @@ Aug 2014<br />
 `TODO // Review this book once complete`
 
 ## Chapters
+Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) notes not required.
 <table>
 <thead>
     <tr>
@@ -21,8 +22,6 @@ Aug 2014<br />
     </tr>
 </thead>
 <tbody>
-    <tr><td>01</td><td>Java Primer</td><td></td></tr>
-    <tr><td>02</td><td>Object Oriented Design</td><td></td></tr>
     <tr><td>03</td><td>Fundamental Data Structures</td>
         <td>
         Using Arrays:<br /><br />
@@ -49,10 +48,12 @@ Aug 2014<br />
     </tr>
     <tr><td>04</td><td>Algorithm Analysis</td>
     <td>
-        Functions:<br /><br />
+        Functions:<br />
         <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_functions.png" /><br />
         <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_comparingGrowthRates.png" /><br />
         Seven functions commonly used in the analysis of algorithms. Note, <i>logn = log<sub>2</sub>n</i>. Also, we denote with a <i>a</i> constant greater than 1.<br /><br />
+        <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_functionRunningTimes.png" /><br /><br />
+        Example growth rates to show order of asymptotically betters algorithms.<br /><br />
         <ul>
             <li>A <a href="https://en.wikipedia.org/wiki/Constant_function"><strong>constant function</strong></a> is a function whose (output) value is the same for every input value.<br />
             <i>f(n) = c</i></li>
@@ -94,8 +95,7 @@ Aug 2014<br />
             </li>
             <li><a href="https://en.wikipedia.org/wiki/Geometric_series"><strong>Geometric series</strong></a> is a series with a constant ratio between successive terms. E.g.: <i>1/2 + 1/4 + 1/8 + 1/16 + ...</i> is geometric, because each successive term can be obtained by multiplying the previous term by 1/2.</li>
         </ul>
-        <br />
-        Asymptotic Analysis:<br /><br />
+        <a href="https://en.wikipedia.org/wiki/Asymptotic_analysis">Asymptotic Analysis</a>:<br /><br />
         <ul>
             <li>
                 <strong>primitive operations</strong> such as the following:
@@ -109,8 +109,17 @@ Aug 2014<br />
                     <li>Returning from a method</li>
                 </ul>
             </li>
+            <li><a href="https://en.wikipedia.org/wiki/Big_O_notation"><strong>“Big-Oh” Notation</strong></a> is used to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk).<br />
+            Let <i>f(n)</i> and <i>g(n)</i> be functions mapping positive integers to positive real numbers. We say that <strong><i>f(n)</i> is <i>O(g(n))</i></strong> (or <strong><i>f(n)</i> is big-Oh of <i>g(n)</i></strong>) if there is a real constant <i>c > 0</i> and an integer constant <i>n<sub>0</sub> ≥ 1</i> such that:
+            <i>f(n) ≤ cg(n)</i>, for <i>n ≥ n<sub>0</sub></i><br />
+            <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_bigO.png" /><br />
+            It is considered poor taste to include constant factors and lower-order terms in the big-Oh notation. The seven functions are the most common.</li>
+            <li><strong>Big-Omega</strong> (Ω) provides an asymptotic way of saying that a function grows at a rate that is “greater than or equal to” (rather tha big-Oh's “less than or equal to”)<br />
+            We say that <i>f(n)</i> is <i>Ω(g(n))</i>, pronounced “<i>f(n)</i> is big-Omega of <i>g(n)</i>,” if <i>g(n)</i> is <i>O(f(n))</i>, that is, there is a real constant <i>c > 0</i> and an integer constant <i>n<sub>0</sub> ≥ 1</i> such that:<br />
+            <i>f(n) ≥ cg(n)</i>, for <i>n ≥ n<sub>0</sub></i></li>
+            <li><strong>Big-Theta</strong> (Θ) allows us to say that two functions grow at the same rate, up to constant factors.<br />
+            <i>f(n)</i> is <i>Θ(g(n))</i>, pronounced “<i>f(n)</i> is big-Theta of <i>g(n)</i>,” if <i>f(n)</i> is <i>O(g(n))</i> and <i>f(n)</i> is <i>Ω(g(n))</i>, that is, there are real constants <i>c′ > 0</i> and <i>c′′ > 0</i>, and an integer constant <i>n<sub>0</sub> ≥ 1</i> such that <i>c′g(n) ≤ f(n) ≤ c′′g(n)</i>, for <i>n ≥ n<sub>0</sub></i></li>
         </ul>
-        //////////////////////////////// TODO: Finish notes on this section /////////////////////////////////
         Simple Justification Techniques:<br /><br />
         <ul>
             <li>A <a href="https://en.wikipedia.org/wiki/Counterexample"><strong>counterexample</strong></a> is a special kind of example that disproves a statement or proposition. 
