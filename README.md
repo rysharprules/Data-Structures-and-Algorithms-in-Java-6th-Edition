@@ -22,7 +22,7 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
     </tr>
 </thead>
 <tbody>
-    <tr><td>03</td><td>Fundamental Data Structures</td>
+    <tr><td valign="top">03</td><td valign="top">Fundamental Data Structures</td>
         <td>
         Using Arrays:<br /><br />
             <ul>
@@ -46,29 +46,32 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             </ul>
         </td>
     </tr>
-    <tr><td>04</td><td>Algorithm Analysis</td>
+    <tr><td valign="top">04</td><td valign="top">Algorithm Analysis</td>
     <td>
         Functions:<br />
         <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_functions.png" /><br />
         <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_comparingGrowthRates.png" /><br />
         Seven functions commonly used in the analysis of algorithms. Note, <i>logn = log<sub>2</sub>n</i>. Also, we denote with a <i>a</i> constant greater than 1.<br /><br />
-        <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_functionRunningTimes.png" /><br /><br />
+        <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/04_functionRunningTimes.png" /><br />
         Example growth rates to show order of asymptotically betters algorithms.<br /><br />
         <ul>
             <li>A <a href="https://en.wikipedia.org/wiki/Constant_function"><strong>constant function</strong></a> is a function whose (output) value is the same for every input value.<br />
-            <i>f(n) = c</i></li>
+            <i>f(n) = c</i><br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_04/Constant.java">Example code</a></li>
             <li>The <a href="https://en.wikipedia.org/wiki/Logarithm"><strong>logarithm function</strong></a> is the inverse function to exponentiation (power).<br />
             <i>x = log<sub>b</sub>n</i> if and only if <i>b<sup>x</sup> = n</i>.<br />
             The value <i>b</i> is known as the base of the logarithm. The most common base for the logarithm function in computer science is 2 as computers store integers in binary. In fact, this base is so common that we will typically omit it from the notation when it is 2:<br />
-            <i>log<sub>n</sub> = log<sub>2</sub>n</i></li>
+            <i>log<sub>n</sub> = log<sub>2</sub>n</i><br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Logarithmic.java">Example code</a></li>
             <li>The <a href="https://en.wikipedia.org/wiki/Linear_function"><strong>linear function</strong></a>:<br />
             <i>f(n) = n</i><br />
             Given an input value <i>n</i>, the linear function <i>f</i> assigns the value <i>n</i> itself. <br />
-            This function arises in algorithm analysis any time we have to do a single basic operation for each of <i>n</i> elements. For example, comparing a number <i>x</i> to each element of an array of size <i>n</i> will require <i>n</i> comparisons. The linear function also represents the best running time we can hope to achieve for any algorithm that processes each of <i>n</i> objects that are not already in the computer’s memory, because reading in the <i>n</i> objects already requires <i>n</i> operations.</li>
+            This function arises in algorithm analysis any time we have to do a single basic operation for each of <i>n</i> elements. For example, comparing a number <i>x</i> to each element of an array of size <i>n</i> will require <i>n</i> comparisons. The linear function also represents the best running time we can hope to achieve for any algorithm that processes each of <i>n</i> objects that are not already in the computer’s memory, because reading in the <i>n</i> objects already requires <i>n</i> operations.<br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Linear.java">Example code</a></li>
             <li>The <strong>N-Log-N function</strong><br />
             <i>f(n) = nlogn</i><br />
-            Assigns to an input <i>n</i> the value of <i>n</i> times the logarithm base-two of <i>n</i>. This function grows a little more rapidly than the linear function and a lot less rapidly than the quadratic function; therefore, we would greatly prefer an algorithm with a running time that is proportional to <i>nlogn</i>, than one with quadratic running time.
-            </li>
+            Assigns to an input <i>n</i> the value of <i>n</i> times the logarithm base-two of <i>n</i>. This function grows a little more rapidly than the linear function and a lot less rapidly than the quadratic function; therefore, we would greatly prefer an algorithm with a running time that is proportional to <i>nlogn</i>, than one with quadratic running time.<br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/NLogN.java">Example code</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Quadratic_function"><strong>Quadratic function</strong></a><br />
             <i>f(n) = n<sup>2</sup></i><br />
             Given an input value <i>n</i>, the function <i>f</i> assigns the product of <i>n</i> with itself (i.e., n squared).<br />
@@ -80,7 +83,8 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             </li>
             <li>The linear, quadratic and cubic functions can each be viewed as being part of a larger class of functions, the <a href="https://en.wikipedia.org/wiki/Polynomial"><strong>polynomials</strong></a>.  A polynomial function has the form:<br />
             <i>f(n) = a<sub>0</sub> + a<sub>1</sub>n + a<sub>2</sub>n<sup>2</sup> + a<sub>3</sub>n<sup>3</sup> +···+ a<sub>d</sub>n<sup>d</sup></i><br />
-            where <i>a<sub>0</sub>,a<sub>1</sub>,...,a<sub>d</sub></i> are constants, called the <a href="https://en.wikipedia.org/wiki/Coefficient"><strong>coefficients</strong></a> of the polynomial, and <i>a<sub>d</sub> ≠ 0</i>. Integer <i>d</i>, which indicates the highest power in the polynomial, is called the <a href="https://en.wikipedia.org/wiki/Degree_of_a_polynomial"><strong>degree</strong></a> of the polynomial.</li>
+            where <i>a<sub>0</sub>,a<sub>1</sub>,...,a<sub>d</sub></i> are constants, called the <a href="https://en.wikipedia.org/wiki/Coefficient"><strong>coefficients</strong></a> of the polynomial, and <i>a<sub>d</sub> ≠ 0</i>. Integer <i>d</i>, which indicates the highest power in the polynomial, is called the <a href="https://en.wikipedia.org/wiki/Degree_of_a_polynomial"><strong>degree</strong></a> of the polynomial.<br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Polynomial.java">Example code</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Summation"><strong>Summations</strong></a> (denoted with an enlarged capital Greek sigma symbol) gives us a shorthand way of expressing sums of increasing terms that have a regular structure<br />
             Examples: For a sequence of consecutive integers:<br />
             <i>b∑i=a f(i) = f(a) + f(a+1) + f(a+2) +···+ f(b)</i><br />
@@ -133,6 +137,46 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <li>A <a href="https://en.wikipedia.org/wiki/Loop_invariant"><strong>loop invarient</strong></a> is a property of a program loop that is true before (and after) each iteration. </li>
         </ul>
     </td></tr>
-    <tr><td>04</td><td>Recursion</td><td></td></tr>
+    <tr><td valign="top">05</td><td valign="top">Recursion</td><td>
+        Examples:<br /><br />
+        <ul>
+            <li>The <a href="https://en.wikipedia.org/wiki/Factorial"><strong>factorial</strong></a> function, <i>n!</i><br />
+            <i>n! = <br />
+            { 1</i> if <i>n = 0</i><br />
+            <i>{ n * (n−1)</i> if <i>n ≥ 1</i><br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Factorial.java">Example code</a><br />
+            Recursion tree: <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_factorial.png" /><br />
+            In Java, each time a method (recursive or otherwise) is called, a structure known as an activation record or activation frame is created to store information about the progress of that invocation of the method. This frame stores the parameters and local variables specific to a given call of the method, and information about which command in the body of the method is currently executing.</li>
+            <li>An English ruler has a recursive pattern that is a simple example of a fractal structure. Below is an example of a 2 inch ruler with major tick length of 3:<br />
+            --- 0<br />-<br />--<br />-<br />--- 1<br />-<br />--<br />-<br />--- 2<br />
+            We denote the length of the tick designating a whole inch as the major tick length. Between the marks for whole inches, the ruler contains a series of minor ticks, placed at intervals of 1/2 inch, 1/4 inch, and so on. As the size of the interval decreases by half, the tick length decreases by one. In general, an interval with a central tick length L ≥ 1 is composed of:
+            <ul><li>An interval with a central tick length L−1</li>
+            <li>A single tick of length L</li>
+            <li>An interval with a central tick length L−1</li></ul>
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Factorial.java">Example code</a><br />
+            Example code recursion trace: <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_englishRuler.png" />
+            </li>
+            <li>The <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm"><strong>binary search algorithm</strong></a> is used to efficiently locate a target value within a sorted (indexable) sequence of <i>n</i> elements stored in an array.<br />
+            Complexity: O(log n)<br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/BinarySearch.java">Example code</a><br /><br />
+            Note, when the sequence is <u>unsorted</u>, the standard approach to search for a target value is to use a loop to examine every element, until either finding the target or exhausting the data set. This algorithm is known as <u>linear</u> or <u>sequential</u> search, and it runs in O(n) time (i.e., linear time) since every element is inspected in the worst case.<br /><br />    
+            Terms:
+            <ul><li><strong>Candidate</strong>: an element of the sequence which at the current stage of the search, may match the target</li>
+            <li><strong>Low</strong>: candidate element has the index of at least low; Initially set to 0</li>
+            <li><strong>High</strong>: candidate element has the index of at most high; Initially set to <i>n-1</i> or <code>n.length - 1</code></li>
+            <li><strong>Median candidate</strong>: <i>mid = (low + high)/2</i> - Initially set as the median of the array</li></ul>
+            <br />
+            Three cases considered:
+            <ol><li>If the target equals the median candidate, then we have found the item we are looking for, and the search terminates successfully.</li>
+            <li>If the target is less than the median candidate, then we recur on the first half of the sequence, that is, on the interval of indices from <i>low</i> to <i>mid−1</i>.</li>
+            <li>If the target is greater than the median candidate, then we recur on the second half of the sequence, that is, on the interval of indices from <i>mid+1</i> to <i>high</i></li></ol>
+            <br />
+            Binary search example where target value 22 on a sorted array with 16 elements:
+            <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_binarySearch.png" />
+            </li>
+            <li>File systems - Recursively inspect a tree structure, in this instance a file system of an arbitrary depth to discover the cumulative disk size.<br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/FileSystems.java">Example code</a></li>            
+        </ul>
+    </td></tr>
 </tbody>
 </table>
