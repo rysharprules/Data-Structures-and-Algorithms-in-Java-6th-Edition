@@ -147,7 +147,7 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Factorial.java">Example code</a><br />
             Recursion tree: <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_factorial.png" /><br />
             In Java, each time a method (recursive or otherwise) is called, a structure known as an activation record or activation frame is created to store information about the progress of that invocation of the method. This frame stores the parameters and local variables specific to a given call of the method, and information about which command in the body of the method is currently executing.</li>
-            <li><a href="https://en.wikipedia.org/wiki/Fibonacci_number"><strong>Fibonnaci numbers</strong></a><br />
+            <li><a href="https://en.wikipedia.org/wiki/Fibonacci_number"><strong>Fibonacci numbers</strong></a><br />
             <i>F0 = 0<br />F1 = 1<br />Fn = Fn−2 +Fn−1</i> for <i>n > 1.</i><br />
             <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Fibonacci.java">Example code</a> (good and bad examples)               
             </li>
@@ -187,7 +187,6 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <li>If a recursive call may start two others, we call this a <strong>binary recursion</strong> - <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Binary.java">Example code</a></li>
             <li>If a recursive call may start three or more others, this is <strong>multiple recursion</strong></li>
         </ul>
-        
     </td></tr>
 </tbody>
 </table>
