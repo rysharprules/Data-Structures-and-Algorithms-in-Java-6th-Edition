@@ -147,6 +147,10 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Factorial.java">Example code</a><br />
             Recursion tree: <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_factorial.png" /><br />
             In Java, each time a method (recursive or otherwise) is called, a structure known as an activation record or activation frame is created to store information about the progress of that invocation of the method. This frame stores the parameters and local variables specific to a given call of the method, and information about which command in the body of the method is currently executing.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Fibonacci_number"><strong>Fibonnaci numbers</strong></a><br />
+            <i>F0 = 0<br />F1 = 1<br />Fn = Fn−2 +Fn−1</i> for <i>n > 1.</i><br />
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Fibonacci.java">Example code</a> (good and bad examples)               
+            </li>
             <li>An English ruler has a recursive pattern that is a simple example of a fractal structure. Below is an example of a 2 inch ruler with major tick length of 3:<br />
             --- 0<br />-<br />--<br />-<br />--- 1<br />-<br />--<br />-<br />--- 2<br />
             We denote the length of the tick designating a whole inch as the major tick length. Between the marks for whole inches, the ruler contains a series of minor ticks, placed at intervals of 1/2 inch, 1/4 inch, and so on. As the size of the interval decreases by half, the tick length decreases by one. In general, an interval with a central tick length L ≥ 1 is composed of:
@@ -175,8 +179,15 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/05_binarySearch.png" />
             </li>
             <li>File systems - Recursively inspect a tree structure, in this instance a file system of an arbitrary depth to discover the cumulative disk size.<br />
-            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/FileSystems.java">Example code</a></li>            
+            <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/FileSystems.java">Example code</a></li>
         </ul>
+        Types of recursion:<br /><br />
+        <ul>
+            <li>If a recursive call starts at most one other, we call this a <strong>linear recursion</strong> - <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Linear.java">Example code</a></li>
+            <li>If a recursive call may start two others, we call this a <strong>binary recursion</strong> - <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_05/Binary.java">Example code</a></li>
+            <li>If a recursive call may start three or more others, this is <strong>multiple recursion</strong></li>
+        </ul>
+        
     </td></tr>
 </tbody>
 </table>
