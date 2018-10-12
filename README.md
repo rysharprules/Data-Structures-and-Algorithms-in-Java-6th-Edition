@@ -188,5 +188,27 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <li>If a recursive call may start three or more others, this is <strong>multiple recursion</strong></li>
         </ul>
     </td></tr>
+    <tr><td valign="top">06</td><td valign="top">Stacks, Queues, and Deques</td><td>
+    <strong>Stacks</strong>:<br /><br />
+    <ul>
+        <li>A collection of objects that are inserted and removed via <strong>last-in, first-out (LIFO)</strong></li>
+        <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html">Java 8 Stack<E> class API:</a>
+            <ul>
+                <li><code>boolean empty()</code> - Tests if this stack is empty.</li>
+                <li><code>E peek()</code> - Looks at the object at the top of this stack without removing it from the stack.</li>
+                <li><code>E pop()</code> - Removes the object at the top of this stack and returns that object as the value of this function.</li>
+                <li><code>E push(E item)</code> - Pushes an item onto the top of this stack.</li>
+            </ul>
+        </li>
+        <li>Current documentation for the Stack class recommends that it not be used, as LIFO functionality (and more) is provided by a more general data structure known as a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html">double-ended queue (deque)</a> - <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html">ArrayDeque documentation</a>: <quote><i>This class is likely to be faster than Stack when used as a stack, and faster than LinkedList when used as a queue.</i></li>
+        <li>Example code:<ul>    
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Stack.java">Stack interface</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/ArrayStack.java">Simple Array-Based Stack</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/LinkedStack.java">Stack with a Singly Linked List</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Reverse.java">Reverse array using Stack</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Matcher.java">Matching Delimiters and Tags</a></li>
+        </ul></li>
+    </ul>
+    </td></tr>
 </tbody>
 </table>
