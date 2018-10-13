@@ -219,11 +219,11 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <tr><td><strong>Examine</strong></td><td><code>element()</code></td><td><code>peek()</code></td></tr></table>
         </li>
         <li>Example code:<ul>    
-            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/.java">Queue interface</a></li>
-            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/.java">Array-Based Queue</a></li>
-            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/.java">Queue with a Singly Linked List</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Josephus_problem">Josephus problem</a> - <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/.java">using circular linked list</a></li>
-            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/.java">Deque interface</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Queue.java">Queue interface</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/ArrayQueue.java">Array-Based Queue</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/LinkedQueue.java">Queue with a Singly Linked List</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Josephus_problem">Josephus problem</a> - <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Josephus.java">using circular linked list</a></li>
+            <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Deque.java">Deque interface</a></li>
         </ul></li>
     </ul></td></tr>
 </tbody>
