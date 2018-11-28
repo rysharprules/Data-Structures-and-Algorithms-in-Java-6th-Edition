@@ -226,5 +226,29 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
             <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_06/Deque.java">Deque interface</a></li>
         </ul></li>
     </ul></td></tr>
+    <tr><td valign="top">07</td><td valign="top">List and Iterator Abstract Data Types (ADTs)</td><td>
+    The <strong>List</strong> ADT:<br /><br />
+    <ul>
+        <li>Simple ArrayList class with bounded capacity: <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_07/ArrayList.java">Array List</a></li>
+        <li>A dynamically sized ArrayList, utilizing a resize method which doubles the array size once limit reached: <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_07/DynamicArrayList.java">Dynamic Array List</a><br />
+            <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/07_arrayResize.png" /><br />
+            Resize logic: (a) Create new array B; (b) Store elements of A in B; (c) Reassign reference A to the new array
+        </li>
+        <li><strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis">Amortized Analysis</a></strong> of dynamic arrays shows that performing a sequence of push operations on a dynamic array is actually quite efficient as over time the resize method is only called when the array is size of 2, 4, 8, 16 etc. So, every time the resize method is not called, we gain <i>'credit'</i> for the later call.</li>
+        <li>For dyanamic arrays, a <strong><a href="https://en.wikipedia.org/wiki/Arithmetic_progression">arithmetic progression</a></strong> strategy is significantly worse for overall performance.</li>
+        <li>Positional Lists: Indices are not a good abstraction for describing a more local view of a position in a sequence, because the index of an entry changes over time, e.g. a persons position in a queue waiting for tickets. Example code: <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_07/PositionalList.java">Positional List</a></li>
+        <li><a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_07/PositionalListSorter.java">Sorting of a positional list example</a> using a marker to indicate at what (right most) point elements have been sorted, the position after the marker as the pivot, and walk, to move leftward from the marker, as long as there remains a preceding element with value larger than the pivot’s.</li>
+        <li><strong><a href="https://en.wikipedia.org/wiki/Move-to-front_transform">Move-to-Front Heuristic</a></strong> -  In many real-life access sequences (e.g., Web pages visited by a user), once an element is accessed it is more likely to be accessed again in the near future. Such scenarios are said to possess locality of reference. A heuristic, or rule of thumb, that attempts to take advantage of the locality of reference that is present in an access sequence is the move-to-front heuristic. To apply this heuristic, each time we access an element we move it all the way to the front of the list</li>
+    </ul>
+    <strong><a href="https://en.wikipedia.org/wiki/Iterator">Iterators</a></strong>:<br /><br />
+    <ul>
+        <li>A software design pattern that abstracts the process of scanning through a sequence of elements, one element at a time. It plays a fundamental role in support of the “for-each” loop syntax</li>
+        <li>See example code in <a href="https://github.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/blob/master/src/dsa6/chapter_07/ArrayList.java">Array List</a>, inner class <code>ArrayIterator</code></li>
+        <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html">Java 8 docs</a></li>
+    </ul>
+    <strong><a href="https://en.wikipedia.org/wiki/Java_collections_framework">The Java Collections Framework</a></strong><br /><br />
+    <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/07_javaCollectionsFramework.png" /><br />
+    <ul><li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html">Java 8 Collections (utility class) docs</a></li></ul>
+    </td></tr>
 </tbody>
 </table>
