@@ -250,5 +250,20 @@ Language introductory chapters 01 (Java Primer) and 02 (Object Oriented Design) 
     <img src="https://raw.githubusercontent.com/rysharprules/Data-Structures-and-Algorithms-in-Java-6th-Edition/master/img/07_javaCollectionsFramework.png" /><br />
     <ul><li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html">Java 8 Collections (utility class) docs</a></li></ul>
     </td></tr>
+    <tr><td valign="top">08</td><td valign="top">Trees</td><td>
+    <strong>Trees</strong>:<br /><br />
+    <ul>
+        <li>A <a href="https://en.wikipedia.org/wiki/Tree_(data_structure)" />tree</a> is an abstract data type that stores elements hierarchically with a root value and subtrees of <strong>children</strong> with a <strong>parent</strong> node, represented as a set of linked nodes.</li>
+        <li>Two nodes that are children of the same parent are <strong>siblings</strong>. A node <i>v</i> is <strong>external</strong> if v has no children. A node <i>v</i> is <strong>internal</strong> if it has one or more children. External nodes are also known as <strong>leaves</strong>.</li>
+        <li>A node <i>u</i> <strong>subtree</strong> of <i>T</i> <strong>rooted</strong> at a node <i>v</i> is the tree consisting of all the descendants of <i>v</i> in <i>T</i> (including <i>v</i> itself)</li>
+        <li>An <strong>edge</strong> of tree <i>T</i> is a pair of nodes (<i>u</i>,<i>v</i>) such that <i>u</i> is the parent of <i>v</i>, or vice versa. A <strong>path</strong> of <i>T</i> is a sequence of nodes such that any two consecutive nodes in the sequence form an edge.</li>
+    </ul>
+    The <strong>Tree Abstract Data Type</strong>:<br /><br />
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </td></tr>
 </tbody>
 </table>
